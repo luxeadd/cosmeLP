@@ -1,0 +1,109 @@
+@use 'global' as * ; 
+
+.btn {
+  display: inline-block;
+  font-size: rem(16);
+  line-height: 1;
+  padding: rem(22) rem(25);
+  position: relative;
+  width: rem(335);
+  background: $color-btn;
+  color: $white;
+  
+  @include mq(tab) {
+    width: rem(420);
+    font-size: rem(20);
+    padding: rem(25) rem(25);
+
+  }
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  width: rem(30);
+  height: 1px;
+  background: $white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(25);
+
+  @include mq(tab) {
+    width: rem(50);
+  }
+
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  width: rem(9);
+  height: 1px;
+  background: $white;
+  position: absolute;
+  top: 44%;
+  transform:  rotate(45deg);
+  right: rem(25);
+
+}
+
+//-------------------------------------------------
+
+.btn.btn--arrow-long {
+  @include mq(tab) {
+    width: rem(320);
+    
+  }
+}
+.btn.btn--arrow-long::before {
+  width: rem(50);
+}
+//-------------------------------------------------
+
+.btn.btn--arrow-long2 {
+font-size: rem(14);
+
+@include mq(tab) {
+  width: rem(320);
+  padding: rem(17) rem(30);
+}
+}
+.btn.btn--arrow-long2::before {
+  width: rem(78);
+}
+
+
+//-------------------------------------------------
+
+.btn.btn--small {
+  width: rem(315);
+  padding: rem(22) rem(16);
+  
+  @include mq(tab) {
+    width: rem(420);
+    padding: rem(25) rem(25);
+
+  }
+}
+
+//-------------------------------------------------
+
+.btn.btn--small2 {
+  width: rem(280);
+  padding: rem(22) rem(14);
+  font-size: rem(14);
+  
+  @include mq(tab) {
+    width: rem(420);
+    padding: rem(25) rem(25);
+  }
+}
+.btn.btn.btn--small2::before,
+.btn.btn--small2::after {
+  right: rem(14);
+
+  @include mq(tab) {
+    right: rem(25);
+  }
+}

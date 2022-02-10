@@ -1,0 +1,25 @@
+<div class="mv">
+  <div class="mv__body">
+    <div class="mv__img-box">
+      <picture class="mv__img">
+        <source srcset="./images/common/blue.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+        <img src="./images/common/mv-sp.jpg" alt="MV画像">
+     </picture><!-- /.mv__img -->
+    </div><!-- /.mv__img-box-->
+    <div class="mv__title-box">
+      <div class="inner ">  
+        <h2 class="mv__title">わたし史上<br> いちばん輝く素肌。</h2><!-- /.mv__title -->
+        <small class="mv__sub-title" >肌質・体質に合わせた<br class="u-sp">パーソナライズスキンケア</small>
+        <div class="mv__btn">
+          <%- include('../parts/_btn', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
+        </div><!-- /.mv__btn -->
+      </div><!-- /.inner -->
+    </div><!-- /.mv__title-box -->
+    <div class="mv__aside u-pc">
+      <a href="">
+        <div class="mv__aside-title">無料パーソナル診断実施中</div><!-- /.mv__aside-title -->
+        <div class="mv__aside-text">10,000通りの中からあなたに<br>ぴったりのスキンケアをご提案します</div><!-- /.mv__aside-title -->
+      </a>
+    </div><!-- /.mv__aside -->
+  </div><!-- /.mv-body -->
+</div><!-- /.mv -->

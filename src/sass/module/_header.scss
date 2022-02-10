@@ -1,0 +1,59 @@
+@use 'global' as * ; 
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: rem(60);
+  background: $white;
+  @include mq(tab) {
+    height: rem(80);
+
+  }
+}
+
+.header__inner{
+  display: flex;
+  align-items: center;
+  padding: 0 rem(20);
+  height: inherit;
+
+  @include mq(tab) {
+    padding-left: rem(180);
+    padding-right: rem(80);
+
+} 
+
+}
+.header__logo{
+  width: rem(70);
+  
+  @include mq(tab) {
+    width: rem(101);
+
+  }
+
+}
+
+.header__menu{
+  display: flex;
+  margin-left: auto;
+}
+
+.header__menu-item {
+ width: rem(20);
+ height: rem(20);
+ 
+
+}
+
+.header__menu-item + .header__menu-item {
+  margin-left: rem(20);
+}
+
+.header__menu-item img {
+  width: 100%;
+  height: 100%
+}

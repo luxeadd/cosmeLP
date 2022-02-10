@@ -1,0 +1,34 @@
+@use 'global' as * ; 
+
+.section-title {
+  display: inline-block;
+  font-size: rem(24);
+  line-height: 1.4167;
+  position: relative;
+
+  @include mq(tab) {
+    font-size: rem(34);
+
+  }
+}
+
+.section-title::before {
+ content: "";
+ display: block;
+ width: rem(30);
+ height: rem(2);
+ background: $color-btn;
+ position: absolute;
+ bottom: rem(-12);
+ left: 50%;
+ transform: translateX(-50%);
+
+
+}
+
+.section-title.section-title--left::before {
+   content: "";
+   left: 0;
+   transform: translateX(0);
+  
+}

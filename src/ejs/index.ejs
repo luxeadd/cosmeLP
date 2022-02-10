@@ -2,8 +2,28 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 <body>
+  <%- include('./common/_header') %>
+  <%- include('./parts/_mv') %>
+  <%- include('./parts/_concept-item') %>
   
   
- <%- include('./common/_footer') %>
+
+
+  <%- include('./common/_footer') %>
+
+
+
+
+
+
+  <div class="margin"></div><!-- /.margin -->
+ <%- include('./parts/_btn', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
+ <%- include('./parts/_btn-small', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
+ <%- include('./parts/_btn-small2', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
+ <%- include('./parts/_btn-arrow-long', {text:'詳しくみる' , link:''}) %>
+ <%- include('./parts/_btn-arrow-long2', {text:'お知らせ一覧はこちら' , link:''}) %>
+
+ <%- include('./parts/_section-title', {text:'コンセプト' }) %>
+ <%- include('./parts/_section-title-left', {text:'コンセプト' }) %>
   </body>
 </html>

@@ -2,28 +2,107 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 <body>
-  <%- include('./common/_header') %>
-  <%- include('./parts/_mv') %>
-  <%- include('./parts/_concept-item') %>
+  
+  <main class="top">
+  <div class="top__header">
+    <%- include('./common/_header') %>
+  </div><!-- /.top__header -->
+  <!-- header -->
+  
+  <!-- mv -->
+  <div id="js-mv" class="top__mv">
+    <%- include('./parts/_mv') %>
+  </div><!-- /.top__mv -->
+  
+  <!-- concept -->
+  <section class="top__concept">
+    <div class="inner">
+      <%- include('./parts/_concept-item') %>
+    </div><!-- /.inner -->
+  </section><!-- /.concept -->
+  
+  <!-- 商品一覧 -->
+  <section class="top__products js-scrollAnimation">
+    <div class="inner">
+      <div class="top__products-title">
+        <%- include('./parts/_section-title', {text:'商品一覧' }) %>
+      </div><!-- /.products__title -->
+      <div class="top__products-body">
+        <%- include('./parts/_cards') %>
+      </div><!-- /.top__products-body -->
+    </div><!-- /.inner -->
+  </section><!-- /.products -->
   
   
+  <!-- 診断の流れ -->
+  <section class="top__diagnosis">
+    <div class="inner">
+      <div class="top__diagnosis-block js-scrollAnimation">
+        <div class="top__diagnosis-title">
+          <%- include('./parts/_section-title', {text:'パーソナル診断の流れ' }) %>
+        </div><!-- /.diagnosis__title -->
+        <div class="top__diagnosis-body">
+          <%- include('./parts/_flow-items') %>
+        </div><!-- /.diagnosis__body -->
+        <div class="top__diagnosis-btn">
+          <%- include('./parts/_btn-small', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
+        </div><!-- /.diagnosis__btn -->
+      </div><!-- /.diagnosis__block -->
+    </div><!-- /.inner -->
+  </section><!-- /.diagnosis -->
+  
+  
+  <!-- お知らせ -->
+  <section class="top__news js-scrollAnimation">
+    <div class="inner">
+      <div class="top__news-title">
+        <%- include('./parts/_section-title', {text:'お知らせ' }) %>
+      </div><!-- /.top-news__title -->
+      <div class="top__news-body">
+        <%- include('./parts/_news-items') %>
+      </div><!-- /.top-news__body -->
+      <div class="top__news-btn">
+        <%- include('./parts/_btn-arrow-long2', {text:'お知らせ一覧はこちら' , link:''}) %>
+      </div><!-- /.top-news__btn -->
+    </div><!-- /.inner -->
+  </section><!-- /.top-news -->
 
 
-  <%- include('./common/_footer') %>
+  <!-- 初回限定価格 -->
+  <section class="top__price">
+    <div class="inner">
+      <div class="top__price-block js-scrollAnimation">
+        <div class="top__price-block-inner">
+          <div class="top__price-title">
+            <%- include('./parts/_section-title', {text:'初回限定価格' }) %>
+          </div><!-- /.top-price__title -->
+          <div class="top__price-body">
+            <div class="top__price-price">
+              <%- include('./parts/_price') %>
+            </div><!-- /.top-price__price -->
+            <div class="top__price-set">
+              <%- include('./parts/_set') %>
+            </div><!-- /.top-price__set -->
+          </div><!-- /.top-price___body -->
+          <div class="top__price-btn">
+            <%- include('./parts/_btn-small2', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
+          </div><!-- /.top-price__btn -->
+        </div><!-- /.top-price__block-inner -->
+      </div><!-- /.top-price__block -->
+    </div><!-- /.inner -->
+  </section><!-- /.top__price -->
+  
 
+  <aside id="js-aside" class="top__aside">
+      <%- include('./parts/_aside') %>
+  </aside>
+  
+  <!-- footer -->
+  <div class="top__footer">
+    <%- include('./common/_footer') %>
+  </div><!-- /.top__footer -->
+  
+</main><!-- /.top -->
 
-
-
-
-
-  <div class="margin"></div><!-- /.margin -->
- <%- include('./parts/_btn', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
- <%- include('./parts/_btn-small', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
- <%- include('./parts/_btn-small2', {text:'無料パーソナル診断を受けてみる' , link:''}) %>
- <%- include('./parts/_btn-arrow-long', {text:'詳しくみる' , link:''}) %>
- <%- include('./parts/_btn-arrow-long2', {text:'お知らせ一覧はこちら' , link:''}) %>
-
- <%- include('./parts/_section-title', {text:'コンセプト' }) %>
- <%- include('./parts/_section-title-left', {text:'コンセプト' }) %>
   </body>
 </html>

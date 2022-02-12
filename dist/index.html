@@ -10,15 +10,19 @@
   <meta name="description" content="わたし史上いちばん輝く素肌。肌質・体質に合わせたパーソナライズスキンケア。" />
   <meta name="keywords" content="" />
   <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
+  <meta property="og:title" content="TO U" />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
+  <meta property="og:image" content=",/images/common/mv-sp.jpg" />
+  <meta property="og:site_name" content="TO U" />
+  <meta property="og:description" content="わたし史上いちばん輝く素肌。肌質・体質に合わせたパーソナライズスキンケア。" />
   <meta name="twitter:card" content="summary" />
   <!-- ファビコン -->
   <link rel="icon" href="#" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css" />
   <!-- JavaScript -->
@@ -26,106 +30,324 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__inner">
-      <h1 class="header__logo">
-        <a href="">
-          <img src="./images/common/logo.svg" alt="TO U">
-        </a>
-      </h1><!-- /.header__logo -->
-      <nav class="header__menu">
-        <a href=" " class="header__menu-item">
-          <img src="./images/common/menu.png" alt="メニューアイコン">
-        </a><!-- /.header__menu-item -->
-        <a href=" " class="header__menu-item">
-          <img src="./images/common/cart.png" alt="カートアイコン">
-        </a><!-- /.header__menu-item -->
-      </nav>
-    </div><!-- /.header__inner -->
-  </header><!-- /.header -->
-  <div class="mv">
-    <div class="mv__body">
-      <div class="mv__img-box">
-        <picture class="mv__img">
-          <source srcset="./images/common/blue.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-          <img src="./images/common/mv-sp.jpg" alt="MV画像">
-        </picture><!-- /.mv__img -->
-      </div><!-- /.mv__img-box-->
-      <div class="mv__title-box">
-        <div class="inner ">
-          <h2 class="mv__title">わたし史上<br> いちばん輝く素肌。</h2><!-- /.mv__title -->
-          <small class="mv__sub-title">肌質・体質に合わせた<br class="u-sp">パーソナライズスキンケア</small>
-          <div class="mv__btn">
-            <a href="" class="btn">無料パーソナル診断を受けてみる</a><!-- /.btn -->
-          </div><!-- /.mv__btn -->
-        </div><!-- /.inner -->
-      </div><!-- /.mv__title-box -->
-      <div class="mv__aside u-pc">
-        <a href="">
-          <div class="mv__aside-title">無料パーソナル診断実施中</div><!-- /.mv__aside-title -->
-          <div class="mv__aside-text">10,000通りの中からあなたに<br>ぴったりのスキンケアをご提案します</div><!-- /.mv__aside-title -->
-        </a>
-      </div><!-- /.mv__aside -->
-    </div><!-- /.mv-body -->
-  </div><!-- /.mv -->
-  <div class="concept-item">
-    <div class="inner">
-      <div class="concept-item__block">
-        <div class="concept-item__body">
-          <div class="concept-item__title">
-            <h2 class="section-title section-title--left">コンセプト</h2><!-- /.section--title -->
-          </div><!-- /.concept-item__title -->
-          <p class="concept-item__text">肌はひとりひとり違うものだから、<br>流行りにとらわれず、本当に良いものを求めるあなたへ。 </p><!-- /.concept-item__text -->
-          <p class="concept-item__text">0,000通りの組み合わせから<br>あなたの肌質や体質に最適なスキンケアをお届けします。</p><!-- /.concept-item__text -->
-        </div><!-- /.concept-item__body -->
-        <div class="concept-item__img">
-          <img src="./images/common/concept.jpg" alt="concept画像">
-        </div><!-- /.concept-item__img -->
-      </div><!-- /.concept-item__block -->
-    </div><!-- /.inner -->
-  </div><!-- /.concept-item -->
-  <div class="footer">
-    <div class="inner footer__inner">
-      <div class="footer__body">
-        <div class="footer__logo">
-          <a href="">
-            <img src="./images/common/logo-w.svg" alt="TO U">
-          </a>
-        </div><!-- /.footer__logo -->
-        <div class="footer__menu">
-          <div class="footer__menu-item"><a href="">マイページ</a></div><!-- /.footer__menu-item -->
-          <div class="footer__menu-item"><a href="">よくある質問</a></div><!-- /.footer__menu-item -->
-          <div class="footer__menu-item"><a href="">会社概要</a></div><!-- /.footer__menu-item -->
-          <div class="footer__menu-item"><a href="">お問い合わせ</a></div><!-- /.footer__menu-item -->
-        </div><!-- /.footer__menu -->
-        <div class="footer__sns">
-          <div class="footer__sns-item">
+  <main class="top">
+    <div class="top__header">
+      <header class="header">
+        <div class="header__inner">
+          <h1 class="header__logo">
             <a href="">
-              <img src="../images/common/twitter.png" alt="twitter">
+              <img src="./images/common/logo.svg" alt="TO U">
             </a>
-          </div><!-- /.footer__sns-item -->
-          <div class="footer__sns-item">
+          </h1><!-- /.header__logo -->
+          <nav class="header__menu">
+            <a href=" " class="header__menu-item">
+              <img src="./images/common/menu.png" alt="メニューアイコン">
+            </a><!-- /.header__menu-item -->
+            <a href=" " class="header__menu-item">
+              <img src="./images/common/cart.png" alt="カートアイコン">
+            </a><!-- /.header__menu-item -->
+          </nav>
+        </div><!-- /.header__inner -->
+      </header><!-- /.header -->
+    </div><!-- /.top__header -->
+    <!-- header -->
+    <!-- mv -->
+    <div id="js-mv" class="top__mv">
+      <div class="mv">
+        <div class="mv__body">
+          <div class="mv__img-box">
+            <picture class="mv__img">
+              <source srcset="./images/common/blue.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+              <img src="./images/common/mv-sp.jpg" alt="MV画像">
+            </picture><!-- /.mv__img -->
+          </div><!-- /.mv__img-box-->
+          <div class="mv__title-box">
+            <div class="inner ">
+              <h2 class="mv__title">わたし史上<br> いちばん輝く素肌。</h2><!-- /.mv__title -->
+              <small class="mv__sub-title">肌質・体質に合わせた<br class="u-sp">パーソナライズスキンケア</small>
+              <div class="mv__btn">
+                <a href="" class="btn">無料パーソナル診断を受けてみる</a><!-- /.btn -->
+              </div><!-- /.mv__btn -->
+            </div><!-- /.inner -->
+          </div><!-- /.mv__title-box -->
+          <div class="mv__aside u-pc">
             <a href="">
-              <img src="../images/common/facebook.png" alt="facebook">
+              <div class="mv__aside-title">無料パーソナル診断実施中</div><!-- /.mv__aside-title -->
+              <div class="mv__aside-text">10,000通りの中からあなたに<br>ぴったりのスキンケアをご提案します</div><!-- /.mv__aside-title -->
             </a>
-          </div><!-- /.footer__sns-item -->
-          <div class="footer__sns-item">
-            <a href="">
-              <img src="../images/common/instagram.png" alt="instagram">
-            </a>
-          </div><!-- /.footer__sns-item -->
-        </div><!-- /.footer__sns -->
-      </div><!-- /.footer__body -->
-      <div class="footer__copy"> &copy;to U </div><!-- /.footer__copy -->
-    </div><!-- /.inner footer__inner -->
-  </div>
-  <div class="margin"></div><!-- /.margin -->
-  <a href="" class="btn">無料パーソナル診断を受けてみる</a><!-- /.btn -->
-  <a href="" class="btn btn--small">無料パーソナル診断を受けてみる</a><!-- /.btn -->
-  <a href="" class="btn btn--small2">無料パーソナル診断を受けてみる</a><!-- /.btn -->
-  <a href="" class="btn btn--arrow-long">詳しくみる</a><!-- /.btn -->
-  <a href="" class="btn btn--arrow-long2">お知らせ一覧はこちら</a><!-- /.btn -->
-  <h2 class="section-title">コンセプト</h2><!-- /.section--title -->
-  <h2 class="section-title section-title--left">コンセプト</h2><!-- /.section--title -->
+          </div><!-- /.mv__aside -->
+        </div><!-- /.mv-body -->
+      </div><!-- /.mv -->
+    </div><!-- /.top__mv -->
+    <!-- concept -->
+    <section class="top__concept">
+      <div class="inner">
+        <div class="concept-item  js-scrollAnimation">
+          <div class="concept-item__block">
+            <div class="concept-item__body">
+              <div class="concept-item__title">
+                <h2 class="section-title section-title--left">コンセプト</h2><!-- /.section--title -->
+              </div><!-- /.concept-item__title -->
+              <p class="concept-item__text">肌はひとりひとり違うものだから、<br>流行りにとらわれず、本当に良いものを求めるあなたへ。 </p><!-- /.concept-item__text -->
+              <p class="concept-item__text">10,000通りの組み合わせから<br>あなたの肌質や体質に最適なスキンケアをお届けします。</p><!-- /.concept-item__text -->
+            </div><!-- /.concept-item__body -->
+            <div class="concept-item__img">
+              <img src="./images/common/concept.jpg" alt="concept画像">
+            </div><!-- /.concept-item__img -->
+          </div><!-- /.concept-item__block -->
+        </div><!-- /.concept-item -->
+      </div><!-- /.inner -->
+    </section><!-- /.concept -->
+    <!-- 商品一覧 -->
+    <section class="top__products js-scrollAnimation">
+      <div class="inner">
+        <div class="top__products-title">
+          <h2 class="section-title">商品一覧</h2><!-- /.section--title -->
+        </div><!-- /.products__title -->
+        <div class="top__products-body">
+          <div class="cards ">
+            <div class="cards__item">
+              <article class="card">
+                <div class="card__header">
+                  <figure class="card__figure">
+                    <img src="./images/common/cosme1.jpg" alt="">
+                  </figure>
+                </div><!-- /.card__header -->
+                <div class="card__body">
+                  <h3 class="card__title">化粧水</h3>
+                  <p class="card__copy">敏感肌、脂性肌、乾燥肌等あなたの肌の性質にあった水分量と油分量のバランスを整え、保水力と免疫力もアップします。</p>
+                </div><!-- /.card__body -->
+                <div class="card__footer">
+                  <p class="card__text">内容量 : 200ml</p>
+                  <p class="card__text">使用目安 : 3ヶ月</p>
+                </div><!-- /.card__footer -->
+                <div class="card__btn">
+                  <a href="" class="btn btn--arrow-long">詳しくはこちら</a><!-- /.btn -->
+                </div><!-- /.card__btn -->
+              </article>
+            </div><!-- /.cards__item -->
+            <div class="cards__item">
+              <article class="card">
+                <div class="card__header">
+                  <figure class="card__figure">
+                    <img src="./images/common/cosme2.jpg" alt="">
+                  </figure>
+                </div><!-- /.card__header -->
+                <div class="card__body">
+                  <h3 class="card__title">美容クリーム</h3>
+                  <p class="card__copy">肌質に合わせた成分で、本来のしっとり柔らかな肌の再生、アンチエイジング効果もあります。</p>
+                </div><!-- /.card__body -->
+                <div class="card__footer">
+                  <p class="card__text">内容量 : 60g</p>
+                  <p class="card__text">使用目安 : 3ヶ月</p>
+                </div><!-- /.card__footer -->
+                <div class="card__btn">
+                  <a href="" class="btn btn--arrow-long">詳しくはこちら</a><!-- /.btn -->
+                </div><!-- /.card__btn -->
+              </article>
+            </div><!-- /.cards__item -->
+            <div class="cards__item">
+              <article class="card">
+                <div class="card__header">
+                  <figure class="card__figure">
+                    <img src="./images/common/cosme3.jpg" alt="">
+                  </figure>
+                </div><!-- /.card__header -->
+                <div class="card__body">
+                  <h3 class="card__title">乳液</h3>
+                  <p class="card__copy">化粧水と美容クリームの後、潤いと美容成分を閉じ込めキープします。</p>
+                </div><!-- /.card__body -->
+                <div class="card__footer">
+                  <p class="card__text">内容量 : 90g</p>
+                  <p class="card__text">使用目安 : 3ヶ月</p>
+                </div><!-- /.card__footer -->
+                <div class="card__btn">
+                  <a href="" class="btn btn--arrow-long">詳しくはこちら</a><!-- /.btn -->
+                </div><!-- /.card__btn -->
+              </article>
+            </div><!-- /.cards__item -->
+          </div><!-- /.cards -->
+        </div><!-- /.top__products-body -->
+      </div><!-- /.inner -->
+    </section><!-- /.products -->
+    <!-- 診断の流れ -->
+    <section class="top__diagnosis">
+      <div class="inner">
+        <div class="top__diagnosis-block js-scrollAnimation">
+          <div class="top__diagnosis-title">
+            <h2 class="section-title">パーソナル診断の流れ</h2><!-- /.section--title -->
+          </div><!-- /.diagnosis__title -->
+          <div class="top__diagnosis-body">
+            <div class="flow-items js-scrollAnimation">
+              <div class="flow-items__item">
+                <div class="flow">
+                  <div class="flow__header">
+                    <figure class="flow__figure">
+                      <img src="./images/common/pc-work.png" alt="">
+                    </figure>
+                  </div><!-- /.flow__header -->
+                  <div class="flow__body">
+                    <h3 class="flow__title">診断を受ける</h3>
+                    <p class="flow__copy">3分程のオンライン美容分析診断を行い、あなたの肌の調子をチェックします。</p>
+                  </div><!-- /.flow__body -->
+                </div>
+              </div><!-- /.cards__item -->
+              <div class="flow-items__item">
+                <div class="flow">
+                  <div class="flow__header">
+                    <figure class="flow__figure">
+                      <img src="./images/common/meeting.png" alt="">
+                    </figure>
+                  </div><!-- /.flow__header -->
+                  <div class="flow__body">
+                    <h3 class="flow__title">スキンケアセットの提案</h3>
+                    <p class="flow__copy">分析結果を元に、10,000通りの組み合わせからあなたに最適な化粧品をご提案します。</p>
+                  </div><!-- /.flow__body -->
+                </div>
+              </div><!-- /.cards__item -->
+              <div class="flow-items__item">
+                <div class="flow">
+                  <div class="flow__header">
+                    <figure class="flow__figure">
+                      <img src="./images/common/send.png" alt="">
+                    </figure>
+                  </div><!-- /.flow__header -->
+                  <div class="flow__body">
+                    <h3 class="flow__title">玄関先まで送付</h3>
+                    <p class="flow__copy">2週間以内に玄関先または郵便ボックスにスキンケアセットをお届けします。</p>
+                  </div><!-- /.flow__body -->
+                </div>
+              </div><!-- /.cards__item -->
+            </div><!-- /.cards -->
+          </div><!-- /.diagnosis__body -->
+          <div class="top__diagnosis-btn">
+            <a href="" class="btn btn--small">無料パーソナル診断を受けてみる</a><!-- /.btn -->
+          </div><!-- /.diagnosis__btn -->
+        </div><!-- /.diagnosis__block -->
+      </div><!-- /.inner -->
+    </section><!-- /.diagnosis -->
+    <!-- お知らせ -->
+    <section class="top__news js-scrollAnimation">
+      <div class="inner">
+        <div class="top__news-title">
+          <h2 class="section-title">お知らせ</h2><!-- /.section--title -->
+        </div><!-- /.top-news__title -->
+        <div class="top__news-body">
+          <article class="news">
+            <div class="news__meta">
+              <time class="news__date" datetime="2021-12-01">2021/12/01</time>
+            </div><!-- /.news__nav -->
+            <div class="news__body">
+              <a href="" class="news__title"> 連休中の対応について </a><!-- /.news__title -->
+            </div><!-- /.news__body -->
+          </article><!-- /.news -->
+          <article class="news">
+            <div class="news__meta">
+              <time class="news__date" datetime="2021-9-12">2021/9/13</time>
+            </div><!-- /.news__nav -->
+            <div class="news__body">
+              <a href="" class="news__title"> 商品入荷のお知らせ </a><!-- /.news__title -->
+            </div><!-- /.news__body -->
+          </article><!-- /.news -->
+          <article class="news">
+            <div class="news__meta">
+              <time class="news__date" datetime="2021-10-12">2021/10/12</time>
+            </div><!-- /.news__nav -->
+            <div class="news__body">
+              <a href="" class="news__title"> サイトオープンしました。 </a><!-- /.news__title -->
+            </div><!-- /.news__body -->
+          </article><!-- /.news -->
+        </div><!-- /.top-news__body -->
+        <div class="top__news-btn">
+          <a href="" class="btn btn--arrow-long2">お知らせ一覧はこちら</a><!-- /.btn -->
+        </div><!-- /.top-news__btn -->
+      </div><!-- /.inner -->
+    </section><!-- /.top-news -->
+    <!-- 初回限定価格 -->
+    <section class="top__price">
+      <div class="inner">
+        <div class="top__price-block js-scrollAnimation">
+          <div class="top__price-block-inner">
+            <div class="top__price-title">
+              <h2 class="section-title">初回限定価格</h2><!-- /.section--title -->
+            </div><!-- /.top-price__title -->
+            <div class="top__price-body">
+              <div class="top__price-price">
+                <div class="price">
+                  <picture>
+                    <source srcset=" ./images/common/price-pc.jpg " media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+                    <img src=" ./images/common/price-sp.jpg " alt="価格" /><!-- それ以外で表示 -->
+                  </picture>
+                </div><!-- /.price -->
+              </div><!-- /.top-price__price -->
+              <div class="top__price-set">
+                <div class="set">
+                  <div class="set__block">
+                    <div class="set__img">
+                      <img src="./images/common/set.jpg" alt="セット内容画像">
+                    </div><!-- /.set__img -->
+                  </div><!-- /.set-block -->
+                  <div class="set__body">
+                    <p class="set__text">■化粧水 <span>200ml</span><span>1本</span></p><!-- /.set__text -->
+                    <p class="set__text">■美容クリーム <span>60g</span><span>1個</span></p><!-- /.set__text -->
+                    <p class="set__text">■乳液 <span>90g</span><span>1本</span></p><!-- /.set__text -->
+                    <div class="set__footer">
+                      <div class="set__plus">さらに！30日間全額返金保証付き</div><!-- /.set__plus -->
+                    </div><!-- /.set__footer -->
+                  </div><!-- /.set__body -->
+                </div><!-- /.set -->
+              </div><!-- /.top-price__set -->
+            </div><!-- /.top-price___body -->
+            <div class="top__price-btn">
+              <a href="" class="btn btn--small2">無料パーソナル診断を受けてみる</a><!-- /.btn -->
+            </div><!-- /.top-price__btn -->
+          </div><!-- /.top-price__block-inner -->
+        </div><!-- /.top-price__block -->
+      </div><!-- /.inner -->
+    </section><!-- /.top__price -->
+    <aside id="js-aside" class="top__aside">
+      <a href="" class="aside">
+        <p class="aside__text"> 無料パーソナル診断はこちら </p><!-- /.aside__text -->
+      </a><!-- /.aside -->
+    </aside>
+    <!-- footer -->
+    <div class="top__footer">
+      <div class="footer">
+        <div class="inner footer__inner">
+          <div class="footer__body">
+            <div class="footer__logo">
+              <a href="">
+                <img src="./images/common/logo-w.svg" alt="TO U">
+              </a>
+            </div><!-- /.footer__logo -->
+            <div class="footer__menu">
+              <div class="footer__menu-item"><a href="">マイページ</a></div><!-- /.footer__menu-item -->
+              <div class="footer__menu-item"><a href="">よくある質問</a></div><!-- /.footer__menu-item -->
+              <div class="footer__menu-item"><a href="">会社概要</a></div><!-- /.footer__menu-item -->
+              <div class="footer__menu-item"><a href="">お問い合わせ</a></div><!-- /.footer__menu-item -->
+            </div><!-- /.footer__menu -->
+            <div class="footer__sns">
+              <div class="footer__sns-item">
+                <a href="">
+                  <img src="../images/common/twitter.png" alt="twitter">
+                </a>
+              </div><!-- /.footer__sns-item -->
+              <div class="footer__sns-item">
+                <a href="">
+                  <img src="../images/common/facebook.png" alt="facebook">
+                </a>
+              </div><!-- /.footer__sns-item -->
+              <div class="footer__sns-item">
+                <a href="">
+                  <img src="../images/common/instagram.png" alt="instagram">
+                </a>
+              </div><!-- /.footer__sns-item -->
+            </div><!-- /.footer__sns -->
+          </div><!-- /.footer__body -->
+          <div class="footer__copy"> &copy;to U </div><!-- /.footer__copy -->
+        </div><!-- /.inner footer__inner -->
+      </div>
+    </div><!-- /.top__footer -->
+  </main><!-- /.top -->
 </body>
 </html>

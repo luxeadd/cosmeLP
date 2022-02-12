@@ -1,0 +1,18 @@
+<article class="card">
+    <div class="card__header">
+      <figure class="card__figure">
+        <img src="<%= image %>" alt="<%= alt %>" >
+      </figure>
+    </div><!-- /.card__header -->
+    <div class="card__body">
+      <h3 class="card__title"><%= title %></h3>
+      <p class="card__copy"><%- text %></p>
+    </div><!-- /.card__body -->
+    <div class="card__footer">
+      <p class="card__text"><%- text2 %></p>
+      <p class="card__text"><%- text3 %></p>
+    </div><!-- /.card__footer -->
+    <div class="card__btn">
+      <%- include('../parts/_btn-arrow-long', {text:'詳しくはこちら' , link:link}) %>
+    </div><!-- /.card__btn -->
+</article>

@@ -1,0 +1,23 @@
+@use 'global' as * ; 
+
+.flow-items {
+  margin-top: rem(-160);
+  
+ @include mq(tab) {
+   display: flex;
+   margin-top: initial;
+   margin-left: rem(-80);
+ }
+}
+
+
+
+.flow-items__item  {
+ margin-top: rem(160);
+
+ @include mq(tab) {
+   width: calc(33.3% - rem(60) * 3 / 3);
+   margin-top: initial;
+   margin-left: rem(80);
+ }
+}

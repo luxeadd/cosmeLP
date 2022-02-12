@@ -1,0 +1,23 @@
+@use 'global' as * ; 
+
+.cards {
+  margin-top: rem(-60);
+ 
+ @include mq(tab) {
+   display: flex;
+   margin-top: initial;
+   margin-left: rem(-60);
+ }
+}
+
+
+
+.cards__item  {
+ margin-top: rem(60);
+
+ @include mq(tab) {
+   width: calc(33.3% - rem(60) * 3 / 3);
+   margin-top: initial;
+   margin-left: rem(60);
+ }
+}

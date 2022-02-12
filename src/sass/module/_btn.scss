@@ -4,14 +4,17 @@
   display: inline-block;
   font-size: rem(16);
   line-height: 1;
-  padding: rem(22) rem(25);
+  padding: rem(22) rem(60) rem(22) rem(25);
   position: relative;
-  width: rem(335);
+  width: 100%;
+  max-width: rem(335);
   background: $color-btn;
   color: $white;
+  text-align: left;
   
   @include mq(tab) {
-    width: rem(420);
+    width: 100%;
+    max-width: rem(420);
     font-size: rem(20);
     padding: rem(25) rem(25);
 
@@ -51,37 +54,50 @@
 //-------------------------------------------------
 
 .btn.btn--arrow-long {
+  padding: rem(17) rem(32);
   @include mq(tab) {
-    width: rem(320);
-    
+    width: 100%;
+    max-width: rem(320);
+    font-size: rem(16);
   }
 }
 .btn.btn--arrow-long::before {
   width: rem(50);
+  
 }
 //-------------------------------------------------
 
 .btn.btn--arrow-long2 {
 font-size: rem(14);
-
+ text-align: left;
+ padding: rem(17) rem(30);
 @include mq(tab) {
-  width: rem(320);
-  padding: rem(17) rem(30);
+  font-size: rem(16);
+  width: 100%;
+  max-width: rem(320);
 }
 }
 .btn.btn--arrow-long2::before {
-  width: rem(78);
+  width: rem(80);
+
+  @include mq(tab) {
+    width: rem(55);
+    
+  }
 }
 
 
 //-------------------------------------------------
 
 .btn.btn--small {
-  width: rem(315);
-  padding: rem(22) rem(16);
+  width: 100%;
+  max-width: rem(315);
+  padding: rem(22) rem(55) rem(22) rem(16);
+  text-align: left;
   
   @include mq(tab) {
-    width: rem(420);
+    width: 100%;
+  max-width: rem(420);
     padding: rem(25) rem(25);
 
   }
@@ -90,13 +106,16 @@ font-size: rem(14);
 //-------------------------------------------------
 
 .btn.btn--small2 {
-  width: rem(280);
-  padding: rem(22) rem(14);
+  width: 100%;
+  max-width: rem(280);
+  padding: rem(22) rem(50) rem(22) rem(14);
   font-size: rem(14);
   
   @include mq(tab) {
-    width: rem(420);
+    width: 100%;
+    max-width: rem(420);
     padding: rem(25) rem(25);
+    font-size: rem(20);
   }
 }
 .btn.btn.btn--small2::before,

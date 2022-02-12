@@ -18,11 +18,12 @@ $padding-sp: 20px;
 ////////////////////
 
 $base-font-family:  "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-$second-font-family: "";
+$second-font-family: 'Montserrat', sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
   font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
 }
 
 // フォントウェイト

@@ -1,0 +1,206 @@
+@use 'global' as * ; 
+
+.price{
+  padding: 0 rem(32);
+
+  @include mq(tab) {
+    padding: 0;
+
+  }
+
+}
+//  @include mq(tab) {
+//    display: flex;
+//    align-items: flex-end;
+  
+//  }
+// }
+// .price__top{
+//   width: min(100%, rem(210));
+//   color: $color-footer;
+//   position: relative;
+//   margin-left: auto;
+//   margin-right: auto;
+  
+//   @include mq(tab) {
+//     // width: min(100%, rem(330));
+//     width: 42%;
+//     margin-left: initial;
+//     margin-right: initial;
+    
+//   }
+// }
+// .price__top::before {
+//   content: "";
+//   display: block;
+//   border-right: 17px solid transparent;
+//   border-left: 17px solid transparent;
+//   border-top: 20px solid $color-btn;
+//   position: absolute;
+//   bottom: rem(-43);
+//   left: 50%;
+//   transform: translateX(-50%);
+  
+//   @include mq(tab) {
+//     bottom: initial;
+//     left: initial;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     right: rem(-32);
+//     border-top: 20px solid transparent;
+//     border-bottom: 20px solid transparent;
+//     border-left: 30px solid $color-btn;
+//   }
+
+// }
+// .price__normal-jp{
+//   font-size: rem(18);
+//   line-height: 1;
+//   font-weight: $normal;
+//   @include mq(tab) {
+//     font-size: rem(34);
+//   }
+// }
+// .price__normal-jp span {
+//   font-size: rem(14);
+//   line-height: 1;
+//   margin-left: rem(-5);
+//   font-weight: $normal;
+//   @include mq(tab) {
+//     font-size: rem(20);
+//   }
+// }
+// .price__normal-number{
+//   font-size: rem(50);
+//   line-height: 1;
+//   position: relative;
+
+//   @include mq(tab) {
+//     margin-top: rem(21);
+//     font-size: rem(80);
+
+//   }
+// }
+// .price__normal-number::before {
+//  content: "";
+//  display: block;
+//  width: rem(130);
+//  height: rem(5);
+//  background: $color-accent;
+//  transform: rotate(-20deg);
+//  position: absolute;
+//  left: rem(-7);
+//  top: 39%;
+//  @include mq(tab) {
+//    width: rem(248);
+   
+//    @include mq(tab) {
+//      transform: rotate(-15deg);
+//      left: rem(-7);
+//      top: 39%;
+     
+//    }
+   
+//  }
+// }
+// .price__normal-number span {
+//   font-size: rem(20);
+//   line-height: 1;
+//   font-weight: $normal;
+// }
+// .price__normal-number span:nth-child(1) {
+//   margin-left: rem(-11);
+
+//   @include mq(tab) {
+//     font-size: rem(40);
+//   }
+// }
+// .price__normal-number span:nth-child(2) {
+//   font-size: rem(16);
+//   margin-left: rem(-5);
+
+//   @include mq(tab) {
+//     font-size: rem(20);
+//   }
+// }
+
+// .price__under{
+//   color: $color-btn;
+//   width: rem(255);
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: rem(74);
+  
+//   @include mq(tab) {
+//     // width: rem(450);
+//     width: 58%;
+//     text-align: right;
+//     margin-top: initial;
+//     // margin-left: rem(44);
+//     margin-right: initial;
+//   }
+// }
+// .price__cut{
+//   font-size: rem(80);
+//   line-height: 1;
+//   position: relative;
+  
+//   @include mq(tab) {
+//     font-size: rem(150);
+    
+//   }
+// }
+// .price__cut::before {
+//   content: "税込";
+//   display: block;
+//   font-size: rem(18);
+//   font-weight: $normal;
+//   line-height: 1;
+//   color: $color-btn;
+//   position: absolute;
+//   top: rem(-20);
+//   left: 0;
+  
+//   @include mq(tab) {
+//     font-size: rem(30);
+//     top: rem(-30);
+//   }
+
+// }
+// .price__cut::after {
+//   content: "送料無料";
+//   display: block;
+//   width: rem(55);
+//   height: rem(60);
+//   background: $color-btn;
+//   font-size: rem(16);
+//   line-height: 1;
+//   letter-spacing: 0.002em;
+//   color: $white;
+//   position: absolute;
+//   right: rem(0);
+//   top: rem(-30);
+//   padding: rem(13) rem(10);
+//   clip-path: polygon(0 22%, 50% 0, 100% 22%, 100% 78%, 50% 100%, 0 78%);
+  
+//   @include mq(tab) {
+//     width: rem(87);
+//     height: rem(94);
+//     font-size: rem(24);
+//     padding: rem(23) rem(18);
+//     right: rem(-14);
+//     top: rem(-46);
+
+    
+//   }
+// }
+// .price__cut span {
+//   font-size: rem(30);
+//   line-height: 1;
+//   margin-left: rem(-20);
+  
+//   @include mq(tab) {
+//     font-size: rem(75);
+//     margin-left: rem(-43);
+//   }
+// }

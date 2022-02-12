@@ -1,0 +1,212 @@
+@use 'global' as * ; 
+
+.top{
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 1.5s;/*アニメーションの長さ*/
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
+  opacity: 0;
+}
+.top__header{
+}
+.top__mv{
+ 
+}
+.top__concept{
+  margin-top: rem(100);
+
+  @include mq(tab) {
+    margin-top: rem(120);
+  }
+}
+
+.top__products{
+  margin-top: rem(149);
+  opacity: 0;
+ 
+  @include mq(tab) {
+    margin-top: rem(114);
+  }
+}
+
+.top__products.is-animated {
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 1s;/*アニメーションの長さ*/
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
+}
+
+.top__products-title{
+ text-align: center;
+}
+.top__products-body {
+   margin-top: rem(100);
+
+   @include mq(tab) {
+     margin-top: rem(53);
+   }
+}
+.top__diagnosis{
+  margin-top: rem(100);
+  padding: rem(50) 0;
+  background: $color-back2;
+
+  @include mq(tab) {
+    margin-top: rem(120);
+    padding: rem(60) 0;
+  }
+}
+.top__diagnosis-block{
+   padding: rem(50) rem(10);
+   background: $white;
+   opacity: 0;
+   @include mq(tab) {
+     padding: rem(54) rem(70) rem(60);
+     
+   }
+}
+
+.top__diagnosis-block.is-animated {
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 1s;/*アニメーションの長さ*/
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
+}
+
+.top__diagnosis-title{
+ text-align: center;
+}
+.top__diagnosis-body{
+  margin-top: rem(286);
+
+  @include mq(tab) {
+    margin-top: rem(124);
+  }
+}
+.top__diagnosis-btn{
+  margin-top: rem(60);
+  text-align: center;
+  
+  @include mq(tab) {
+    margin-top: rem(66);
+    
+  }
+}
+.top__news{
+  padding: rem(100) 0;
+  opacity: 0;
+  @include mq(tab) {
+    padding: rem(113) 0 rem(120);
+    
+  }
+}
+
+.top__news.is-animated {
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 1s;/*アニメーションの長さ*/
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
+}
+
+.top__news-title{
+  text-align: center;
+}
+.top__news-body{
+  margin-top: rem(39);
+  @include mq(tab) {
+    margin: rem(45) auto 0;
+    width: min(100%, rem(940));
+    
+    
+  }
+}
+.top__news-btn{
+  margin-top: rem(50);
+  text-align: center;
+  
+  @include mq(tab) {
+    margin-top: rem(60);
+
+    
+  }
+}
+.top__price{
+  padding: rem(50) 0;
+  background: url(../images/common/shadow.png) no-repeat center center / cover;
+  @include mq(tab) {
+    padding: rem(60) 0;
+    
+  }
+}
+.top__price-block{
+  background: $white;
+  padding: rem(14) rem(10);
+  opacity: 0;
+  
+  @include mq(tab) {
+    padding: rem(22) rem(20);
+    
+  }
+
+}
+
+.top__price-block.is-animated {
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 1s;/*アニメーションの長さ*/
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
+}
+
+.top__price-block-inner{
+  border: 1px solid $color-btn;
+  padding: rem(32) 0 rem(30);
+  
+  @include mq(tab) {
+    padding: rem(32) rem(100) rem(40);
+    
+  }
+}
+.top__price-title{
+  text-align: center;
+}
+.top__price-body{
+  margin-top: rem(58);
+  
+  @include mq(tab) {
+    margin-top: rem(89);
+    
+  }
+}
+.top__price-price{
+}
+.top__price-set{
+  margin-top: rem(47);
+}
+.top__price-btn{
+  margin-top: rem(11);
+  text-align: center;
+  @include mq(tab) {
+    margin-top: rem(50);
+  }
+}
+
+.top__footer {
+  margin-bottom: rem(78);
+
+  @include mq(tab) {
+    margin-bottom: initial;
+  }
+}
+
+.top__aside {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+
+  @include mq(tab) {
+    display: none;
+  }
+}

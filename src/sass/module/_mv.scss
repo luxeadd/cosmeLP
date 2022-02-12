@@ -25,6 +25,13 @@ padding-top: rem(60);
     position: absolute;
     top: 0;
     right: 0;
+
+    animation-name: clip;/*1で解説*/
+    animation-fill-mode:forwards;/*開始と終了の状態*/
+    animation-delay: 1s;/*アニメーションの開始を遅らせる*/
+    animation-duration: .5s;/*アニメーションの長さ*/
+    animation-timing-function:linear;/*アニメーションの進行具合*/
+    clip-path: polygon(100% 45%, 100% 0, 100% 100%, 100% 100%);
   }
 
 
@@ -34,8 +41,17 @@ padding-top: rem(60);
   width: 100%;
  height: calc(276 / 375) * 100vw;
 
+ animation-name: clip;/*1で解説*/
+ animation-fill-mode:forwards;/*開始と終了の状態*/
+ animation-delay: 1s;/*アニメーションの開始を遅らせる*/
+ animation-duration: .5s;/*アニメーションの長さ*/
+ animation-timing-function:linear;/*アニメーションの進行具合*/
+ clip-path: polygon(100% 45%, 100% 0, 100% 100%, 100% 100%);
+
  @include mq(tab) {
    height: 100%;
+   animation: none;
+   clip-path: none;
  }
 }
 .mv__img{
@@ -51,6 +67,14 @@ padding-top: rem(60);
 }
 .mv__title-box{
   margin-top: rem(20);
+
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 0.5s;/*アニメーションの長さ*/
+  animation-delay: 1.5s;
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
+  opacity: 0;
+
   @include mq(tab) {
     width: rem(600);
     margin-top: initial;
@@ -78,7 +102,7 @@ padding-top: rem(60);
   line-height: 1.5;
 
   @include mq(tab) {
-    margin-top: rem(46);
+    margin-top: rem(33);
     font-size: rem(24);
 
   }
@@ -86,6 +110,7 @@ padding-top: rem(60);
 }
 .mv__btn{
   margin-top: rem(26);
+  text-align: center;
   @include mq(tab) {
     margin-top: rem(46);
     
@@ -99,6 +124,13 @@ padding-top: rem(60);
   position: absolute;
   right: 0;
   bottom: rem(46);
+
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 0.5s;/*アニメーションの長さ*/
+  animation-delay: 2s;
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
+  opacity: 0;
 }
 
 .mv__aside a {
@@ -107,6 +139,8 @@ padding-top: rem(60);
   height: 100%;
   display: inline-block;
   position: relative;
+
+  
 }
 
 .mv__aside a::before {
@@ -123,8 +157,8 @@ padding-top: rem(60);
   height: rem(80);
   background: $color-accent;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: rem(-6);
+  left: rem(11);
   transform: translate(-50%, -50%);
   clip-path: polygon(0 22%, 50% 0, 100% 22%, 100% 78%, 50% 100%, 0 78%);
 }

@@ -1,0 +1,141 @@
+@use 'global' as * ; 
+
+.set{
+  padding: rem(30) 0 rem(25);
+  position: relative;
+
+  @include mq(tab) {
+    display: flex;
+    padding: rem(30) 0 rem(27) rem(30);
+    border: 1px solid $color-btn;
+    width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+.set::before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: rem(1);
+  background: $color-btn;
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  top: 0;
+  
+  @include mq(tab) {
+    display: none;
+  }
+}
+
+.set::after {
+  content: "セット内容";
+  display: flex;
+  justify-content: center;
+  width: rem(110);
+  font-size: rem(18);
+  background: $white;
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  top: rem(-14);
+  z-index: 2;
+}
+
+
+.set__block {
+  padding: 0 rem(37);
+  
+  @include mq(tab) {
+    flex: 0 0 rem(242);
+    padding: 0 ;
+  }
+  
+}
+
+.set__img {
+  width: 100%;
+  position: relative;
+  
+  }
+  
+  .set__img::before {
+    padding-top: calc(159 / 240) * 100%; //画像縦 / 横
+    display: block;
+    content: "";
+    
+    @include mq(tab) {
+      padding-top: calc(160 / 241.5) * 100%; //画像縦 / 横
+      
+    }
+  
+  }
+  
+  .set__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+.set__body{
+ @include mq(tab) {
+   margin-left: rem(25);
+ }
+}
+.set__text{
+  margin-top: rem(15);
+  font-size: rem(15);
+  padding:  0 rem(37);
+  
+  @include mq(tab) {
+    padding:  0 ;
+    margin-top: rem(13);
+    
+  }
+}
+
+.set__text:first-child {
+  @include mq(tab) {
+    margin-top: rem(8);
+  }
+}
+.set__text span {
+  margin-left: rem(10);
+}
+
+.set__footer {
+  margin-top: rem(23);
+  text-align: center;
+}
+
+.set__plus{
+  font-size: rem(18);
+  line-height: 1;
+  position: relative;
+  // width: rem(272);
+  display: inline-block;
+
+  @include mq(tab) {
+    margin-top: rem(24);
+    margin-left: initial;
+  }
+}
+.set__plus::before {
+  content: "";
+  display: block;
+  width: 100%;
+  background:#E6E6FA;
+  position: absolute;
+  height: rem(10);
+  bottom: rem(-5);
+  z-index: -1;
+ 
+}
+

@@ -1,9 +1,17 @@
 @use 'global' as * ; 
 
-.concept-item{
+.concept-item {
+  opacity: 0;
+
 }
-.inner{
+
+.concept-item.is-animated{
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration: 1s;/*アニメーションの長さ*/
+  animation-timing-function:ease-in;/*アニメーションの進行具合*/
 }
+
 .concept-item__block {
   display: flex;
   flex-direction: column-reverse;
@@ -25,7 +33,7 @@
   
   @include mq(tab) {
     flex: 0 0 rem(540);
-    padding: rem(82) rem(70) rem(82) rem(50);
+    padding: rem(77) rem(70) rem(87) rem(50);
     margin: 0 0 0 rem(-50);
     
     
@@ -45,15 +53,15 @@
 .concept-item__text:first-of-type {
   margin-top: rem(36);
   @include mq(tab) {
-    margin-top: rem(50);
+    margin-top: rem(45);
     
   }
 }
 .concept-item__text + .concept-item__text {
-  margin-top: rem(14);
+  margin-top: rem(19);
   
   @include mq(tab) {
-    margin-top: rem(16);
+    margin-top: rem(21);
     
   }
 }

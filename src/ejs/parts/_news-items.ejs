@@ -1,0 +1,29 @@
+<% const newsLists=[
+{
+  datetime:'2021-12-01',
+  time:'2021/12/01',
+  title:'連休中の対応について',
+},
+{
+  datetime:'2021-9-12',
+  time:'2021/9/13',
+  title:'商品入荷のお知らせ',
+},
+{
+  datetime:'2021-10-12',
+  time:'2021/10/12',
+  title:'サイトオープンしました。',
+},
+
+] %>
+ <% for (var newsList of newsLists) {%>
+    <%- include('../parts/_news', {
+      datetime:newsList.datetime,
+      time:newsList.time,
+      title:newsList.title,
+  }) %>
+  <% } %>
+
+
+
+ 

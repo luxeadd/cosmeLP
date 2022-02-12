@@ -1,0 +1,50 @@
+@use 'global' as * ; 
+
+.aside {
+  display: block;
+  background: $color-back2; 
+  padding: rem(30) 0;
+  text-align: center;
+
+}
+
+.aside__text {
+  display: inline-block;
+  font-size: rem(18);
+  position: relative;
+  margin-left: rem(43);
+}
+
+.aside__text::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: translateY(-50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: rem(-35);
+}
+
+.aside__text::before {
+  content: "簡単3分";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(12);
+  color: $white;
+  font-size: rem(12);
+  line-height: 1.16666;
+  text-align: center;
+  width: rem(48);
+  height: rem(54);
+  background: $color-accent;
+  position: absolute;
+  top: 50%;
+  left: rem(-72);
+  transform: translateY(-50%);
+  clip-path: polygon(0 22%, 50% 0, 100% 22%, 100% 78%, 50% 100%, 0 78%);
+}

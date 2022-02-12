@@ -1,0 +1,45 @@
+<% const itemLists=[
+{
+  link:'',
+  image:'./images/common/cosme1.jpg',
+  alt:'',
+  title:'化粧水',
+  text:'敏感肌、脂性肌、乾燥肌等あなたの肌の性質にあった水分量と油分量のバランスを整え、保水力と免疫力もアップします。',
+  text2:'内容量 : 200ml',
+  text3:'使用目安 : 3ヶ月',
+},
+{
+  link:'',
+  image:'./images/common/cosme2.jpg',
+  alt:'',
+  title:'美容クリーム',
+  text:'肌質に合わせた成分で、本来のしっとり柔らかな肌の再生、アンチエイジング効果もあります。',
+  text2:'内容量 : 60g',
+  text3:'使用目安 : 3ヶ月',
+},
+{
+  link:'',
+  image:'./images/common/cosme3.jpg',
+  alt:'',
+  title:'乳液',
+  text:'化粧水と美容クリームの後、潤いと美容成分を閉じ込めキープします。',
+  text2:'内容量 : 90g',
+  text3:'使用目安 : 3ヶ月',
+},
+] %>
+<div class="cards ">
+ <% for (var itemList of itemLists) {%>
+  <div class="cards__item">
+    <%- include('../parts/_card', {
+      link:itemList.link,
+      image:itemList.image,
+      alt:itemList.alt,
+      title:itemList.title,
+      text:itemList.text,
+      text2:itemList.text2,
+      text3:itemList.text3,
+  }) %>
+</div><!-- /.cards__item -->
+  <% } %>
+</div><!-- /.cards -->
+  

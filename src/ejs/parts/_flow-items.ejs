@@ -1,0 +1,36 @@
+<% const flowLists=[
+{
+  link:'',
+  image:'./images/common/pc-work.png',
+  alt:'',
+  title:'診断を受ける',
+  text:'3分程のオンライン美容分析診断を行い、あなたの肌の調子をチェックします。',
+},
+{
+  link:'',
+  image:'./images/common/meeting.png',
+  alt:'',
+  title:'スキンケアセットの提案',
+  text:'分析結果を元に、10,000通りの組み合わせからあなたに最適な化粧品をご提案します。',
+},
+{
+  link:'',
+  image:'./images/common/send.png',
+  alt:'',
+  title:'玄関先まで送付',
+  text:'2週間以内に玄関先または郵便ボックスにスキンケアセットをお届けします。',
+},
+
+] %>
+<div class="flow-items js-scrollAnimation">
+ <% for (var flowList of flowLists) {%>
+  <div class="flow-items__item">
+    <%- include('../parts/_flow', {
+      image:flowList.image,
+      alt:flowList.alt,
+      title:flowList.title,
+      text:flowList.text,
+  }) %>
+</div><!-- /.cards__item -->
+  <% } %>
+</div><!-- /.cards -->

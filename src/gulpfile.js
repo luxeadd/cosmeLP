@@ -25,12 +25,12 @@ const destPath = {
 }
 
 // WordPress反映用
-const themeName = "WordPressTheme"; // WordPress theme name
-const destWpPath = {
-	css: `../${themeName}/assets/css/`,
-	js: `../${themeName}/assets/js/`,
-	img: `../${themeName}/assets/images/`,
-}
+// const themeName = "WordPressTheme"; // WordPress theme name
+// const destWpPath = {
+// 	css: `../${themeName}/assets/css/`,
+// 	js: `../${themeName}/assets/js/`,
+// 	img: `../${themeName}/assets/images/`,
+// }
 
 
 // ブラウザーシンク（リアルタイムでブラウザに反映させる処理）
@@ -80,8 +80,9 @@ const cssSass = () => {
         }))
         .pipe(postcss([cssnext(browsers)]))
         .pipe(sourcemaps.write('./'))
+        .pipe(cleanCSS())
         .pipe(dest(destPath.css))
-        .pipe(dest(destWpPath.css))
+        // .pipe(dest(destWpPath.css))
         .pipe(notify({
             message: 'コンパイルOK！',//文字は好きなものに変更してね！
             onLast: true
@@ -105,7 +106,7 @@ const imgImagemin = () => {
         }
     ))
     .pipe(dest(destPath.img))
-    .pipe(dest(destWpPath.img))
+    // .pipe(dest(destWpPath.img))
 }
 
 // jsコンパイル(圧縮なし）
@@ -130,7 +131,7 @@ const jsCompile = () => {
 		// 	)
 		// )
 		.pipe(dest(destPath.js))
-		.pipe(dest(destWpPath.js))
+		// .pipe(dest(destWpPath.js))
 }
 
 // ファイルの変更を検知
@@ -149,10 +150,10 @@ const delPath = {
     jsMin: '../dist/js/script.min.js',
     img: '../dist/images/',
     html: '../dist/*.html',
-    wpcss: `../${themeName}/assets/css/`,
-    wpjs: `../${themeName}/assets/js/script.js`,
-    wpjsMin: `../${themeName}/assets/js/script.min.js`,
-    wpImg: `../${themeName}/assets/images/`
+    // wpcss: `../${themeName}/assets/css/`,
+    // wpjs: `../${themeName}/assets/js/script.js`,
+    // wpjsMin: `../${themeName}/assets/js/script.min.js`,
+    // wpImg: `../${themeName}/assets/images/`
 }
 const clean = (done) => {
     del(delPath.img, { force: true, });

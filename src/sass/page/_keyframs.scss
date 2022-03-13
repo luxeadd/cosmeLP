@@ -1,3 +1,10 @@
+//各ページ全体fadeIn
+body {
+  opacity: 0;
+  animation : fadeIn 2s;
+  animation-fill-mode: both;
+  animation-timing-function:ease;/*アニメーションの進行具合*/
+}
 
 @keyframes fadeIn{
   0% {

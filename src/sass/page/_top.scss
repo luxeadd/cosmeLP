@@ -1,17 +1,5 @@
 @use 'global' as * ; 
 
-.top{
-  animation-name: fadeIn;/*1で解説*/
-  animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration: 1.5s;/*アニメーションの長さ*/
-  animation-timing-function:ease-in;/*アニメーションの進行具合*/
-  opacity: 0;
-}
-.top__header{
-}
-.top__mv{
- 
-}
 .top__concept{
   margin-top: rem(100);
 
